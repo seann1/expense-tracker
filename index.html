@@ -24,6 +24,9 @@
                 <input class="form-control" id="category">
             </div>
             <button type="submit" class="btn" id="add-cat">Add!</button>
+
+          </form>
+            <form id="purchases-input">
               <div id="purchases" class="form-group">
                 <label for="description">item </label>
                 <input class="form-control" id="item">
@@ -33,10 +36,10 @@
                 <input class="form-control" id="price">
                 <button type="submit" class="btn" id="track">Track!</button>
               </div>
-          </form>
+            </form>
         </div>
         <div class="result col-md-4">
-          <h2><span id="cat-name"></span> Purchases</h2>
+          <h2 id="cat-name"></h2>
           <table class="table table-hover">
             <thead>
               <tr>
@@ -46,7 +49,7 @@
                 <td>Total</td>
               </tr>
             </thead>
-            <tbody id="purchases"></tbody>
+            <tbody id="table-items-body"></tbody>
           </table>
         </div>
       </div>

@@ -5,3 +5,11 @@
 #purchases {
   display: none;
 }
+
+.table {
+  display: none;
+}
+
+#cat-name {
+  display: none;
+}
