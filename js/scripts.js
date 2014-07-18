@@ -45,12 +45,21 @@ $(document).ready(function() {
     $(".ind-cat").last().click(function(event) {
       //$("#table-items-body").empty();
       //$("#table-items-body").empty();
+      currentCat = categoriesObject;
       $("#purchases").show();
       $("#cat-name").show();
       $("#cat-name").text(categoryItem + " Purchases");
       event.preventDefault();
 
-      //$("#table-items-body").empty();
+      $("#table-items-body").empty();
+      currentCat.purchases.forEach(function(purchase) {
+          $("#table-items-body").append("<tr>" +
+                          "<td>" + purchase.item + "</td>" +
+                          "<td>" + purchase.quantity + "</td>" +
+                          "<td>" + purchase.price + "</td>" +
+                          "<td>" + purchase.totalCost() + "</td>" +
+                        "</tr>");
+         });
 
       //$('#table-items-body').show();
     });
