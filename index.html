@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script src="js/jquery-1.11.1.js"></script>
+  <script src="js/scripts.js"></script>
+  <title>Expense Tracker</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Expense Tracker</h1>
+    <div class="row">
+        <h2>Expense Organizer</h2>
+        <div class="col-md-4">
+          <form id="expense-tracker">
+            <div class="categories">
+              <h2>Categories</h2>
+                <ul class="cat-list">
+
+
+                </ul>
+                <label for="category">Add a Category</label>
+                <input class="form-control" id="category">
+            </div>
+            <button type="button" class="btn" id="add-cat">Add!</button>
+              <div class="form-group">
+                <label for="description">Add Purchase </label>
+                <input class="form-control" id="item">
+                <input class="form-control" id="quantity">
+                <input class="form-control" id="price">
+              </div>
+              <button type="submit" class="btn" id="track">Track!</button>
+          </form>
+        </div>
+        <div class="result col-md-4">
+          <h2>Purchases</h2>
+          <table class="table table-hover">
+            <thead>
+              <tr>
+                <td>Description</td>
+                <td>Quantity</td>
+                <td>Price</td>
+                <td>Total</td>
+              </tr>
+            </thead>
+            <tbody id="purchases"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
